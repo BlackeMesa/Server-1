@@ -5,7 +5,7 @@ const app = express();
 const mongoose = require("mongoose");
 const Product = require('./products')
 mongoose
-  .connect("mongodb+srv://BlackMesaa:A9nzii666!@cluster0.o9omsat.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect("mongodb+srv://*******:********@cluster0.o9omsat.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connexion à MongoDB réussie !"))
   .catch(() => console.log("Connexion à MongoDB échouée !"));
 app.use(express.json());
